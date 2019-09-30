@@ -1,4 +1,4 @@
-import myLib
+import myLib   #podkluchenie bibl dlya funkcii vvoda 
 b=myLib.get_num('Vvedite chislo')
 a=0
 for i in range(b):
