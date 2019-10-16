@@ -1,0 +1,3 @@
+s = str(input())
+rezStr = ' '.join(s.split())
+print(rezStr)
