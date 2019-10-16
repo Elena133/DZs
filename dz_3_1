@@ -1,0 +1,7 @@
+s = str(input())
+iden = 0
+s1 = s.split()
+for i in range(1, len(s1)):
+    if len(s1[iden]) < len(s1[i]):
+        iden = i
+print(s1[iden])
