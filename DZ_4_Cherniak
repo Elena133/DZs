@@ -1,0 +1,45 @@
+def get_num(prompt):  # funk dlya proverki vvoda
+    while True:
+        try:
+            value = int(input(prompt))
+        except ValueError:
+            print("Это не число")
+            continue
+        else:
+            break
+    return value
+
+def getDvoPlus(k):
+    b = ''
+    while k > 0:
+        b = str(k % 2) + b
+        k = k // 2
+    print(b.rjust(8, '0'))
+    b = ''
+
+
+def getDvoMin(k):
+    b = ''
+    k = abs(k)
+    while k > 0:
+        b = str(k % 2) + b
+        k = k // 2
+    b = b.rjust(8, '0') #izvrashaemsya s otricatelnimi chislami
+    b = b.replace('1', '2')
+    b = b.replace('0', '1')
+    b = b.replace('2', '0')
+
+    # b=b.reverse()
+    print(b+'не правильно но я пыталась=)')
+    b = ''
+
+
+n = 1
+
+while n:
+    n = get_num('Введите целое число но не 0')
+    k = n
+    if k > 0:
+        getDvoPlus(k)
+    elif k < 0:
+        getDvoMin(k)
