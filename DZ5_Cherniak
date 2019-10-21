@@ -21,9 +21,9 @@ print('3', nazv[3] + '        ', cena[3], '  ', col[3])
 n=1
 k=0
 while n:
-    n = get_num('Введите nomer tovara')
+    n = get_num('Введите номер товара (Для выхода введите 0)')
     if n!=0:
-        col[n]=get_num('Введитеkoll')
+        col[n]=get_num('Введите новое количество')
         print('nomer','nazvanie' + '      ' + 'cena' + '  ' + 'kolichestvo')
         print('1',nazv[1] + '        ', cena[1], '  ', col[1])
         print('2',nazv[2] + '     ', cena[2], '  ', col[2])
