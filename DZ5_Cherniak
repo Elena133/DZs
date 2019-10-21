@@ -1,0 +1,30 @@
+def get_num(prompt):  # funk dlya proverki vvoda
+    while True:
+        try:
+            value = int((input(prompt)))
+        except ValueError:
+            print("Это не число")
+            continue
+        else:
+            break
+    return value
+
+
+nazv = {1: 'hurma', 2: 'abizyana',3: 'palki'}
+cena = {1: 200, 2: 400,3: 500}
+col = {1: 2, 2: 6,3: 12}
+print('nomer', 'nazvanie' + '  ' + 'cena' + '  ' + 'kolichestvo')
+print('1', nazv[1] + '        ', cena[1], '  ', col[1])
+print('2', nazv[2] + '     ', cena[2], '  ', col[2])
+print('3', nazv[3] + '        ', cena[3], '  ', col[3])
+
+n=1
+k=0
+while n:
+    n = get_num('Введите nomer tovara')
+    if n!=0:
+        col[n]=get_num('Введитеkoll')
+        print('nomer','nazvanie' + '      ' + 'cena' + '  ' + 'kolichestvo')
+        print('1',nazv[1] + '        ', cena[1], '  ', col[1])
+        print('2',nazv[2] + '     ', cena[2], '  ', col[2])
+        print('3',nazv[3] + '        ', cena[3], '  ', col[3])
