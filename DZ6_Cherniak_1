@@ -1,0 +1,45 @@
+
+def readMass(path):
+    file = open(path)
+    n = 0
+    mass = []
+    for line in file:
+        row = line.strip().split('  ')
+        mass.append(row)
+        n += 1
+    file.close()
+    return mass, n
+
+
+def printMass(mass):
+    for i in range(len(mass)):
+        for j in range(len(mass)):
+            print('%4s'%mass[i][j], end='')
+        print()
+
+mass,n=readMass('C:\\Users\\olena.cherniak\\Documents\\myfile.txt')
+printMass(mass)
+COLL_SUM=0
+MAX_SUM=0
+def SUM_COLL(mass):
+    massSum=[]
+    for i in range(len(mass)):
+        COLL_SUM=0
+        for j in range(len(mass)):
+            COLL_SUM+=int(mass[j][i])
+        massSum.append(COLL_SUM)
+    return massSum
+
+
+
+max_n=0
+n=0
+mS=SUM_COLL(mass)
+print()
+for i in range(len(mS)):
+    print('%4s' % mS[i], end='')
+    if mS[i]>max_n:
+        max_n=mS[i]
+        n=i
+print()
+print (n+1)#nomer stolbca s max summoy
