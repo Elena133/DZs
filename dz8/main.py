@@ -27,18 +27,21 @@ choice = input("Максимальная площадь (пл)б максима�
 if choice == 'пл':
     maxS = 0
     n = ''
+    fun = 'Максимальная площадь у '
     for i in figuresList:
         s = i.getSquare()
         if maxS < s:
             maxS = s
             n = i.name
+
 elif choice == 'пр':
     maxS = 0
     n = ''
+    fun = 'Максимальный периметр у '
     for i in figuresList:
         s = i.getPer()
         if maxS < s:
             maxS = s
             n = i.name
 
-print(maxS,n)
+print(fun, n, ':', maxS)
