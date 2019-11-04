@@ -2,8 +2,8 @@ from boxing import Boxer
 import time
 import boxing
 
-fighterOne = Boxer(input("First Fighter Name:  "))
-fighterTwo = Boxer(input("Second Fighter Name:  "))
+fighterOne = Boxer(input("First Fighter Name:  "))      #input boxers name and creation of Boxer class object
+fighterTwo = Boxer(input("Second Fighter Name:  "))     #input boxers name and creation of Boxer class object
 turn = 20
 while fighterOne.receiveHeath() > 0 and fighterTwo.receiveHeath() > 0:
     if turn % 2 == 0:
