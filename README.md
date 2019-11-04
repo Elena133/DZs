@@ -1,4 +1,4 @@
-# DZs contain 2 folder with 2 different realization of Boxing programm.
+# DZs contain all DZs and 2 folder with 2 different realization of Boxing programm.
 Box is a simple version.
 Boxing build on class and class methods.
 Programm steps:
