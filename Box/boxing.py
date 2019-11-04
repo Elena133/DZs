@@ -9,9 +9,17 @@ class boxMy:
     def getDamage(self):
         return random.randrange(5, 33)
 
-    def printInf(self, nameOne, nameTwo, damage, health):
-        self.nameOne = nameOne
-        self.nameTwo = nameTwo
-        self.damage = damage
-        self.health = health
-        print("{health}{nameOne}\t s remained healthy, after {nameTwo} hit for {damage}".format(health=self.health, nameOne=self.nameOne, nameTwo=self.nameTwo,damage=self.damage))
+
+def printInf(nameOne, nameTwo, damage, health):
+    a = "|{health} is {nameOne}\t s remained healthy, after {nameTwo} hit for {damage}|".format(health=health,
+                                                                                                nameOne=nameOne,
+                                                                                                nameTwo=nameTwo,
+                                                                                                damage=damage)
+    for j in range(len(a) + 2):
+        print('-', end='')
+    print()
+    print(a)
+    for j in range(len(a) + 2):
+        print('-', end='')
+    print()
+    print()
