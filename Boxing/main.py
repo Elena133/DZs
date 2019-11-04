@@ -14,5 +14,5 @@ while fighterOne.receiveHeath() > 0 and fighterTwo.receiveHeath() > 0:
         fighterTwo.hit(fighterOne)
         time.sleep(2)  # Delays for 2 seconds.
         turn = turn - 1             
-winner = fighterOne if fighterTwo.receiveHeath() == 0 else fighterTwo
+winner = fighterOne if fighterTwo.receiveHeath() <= 0 else fighterTwo
 print(f'{winner.name} won')
