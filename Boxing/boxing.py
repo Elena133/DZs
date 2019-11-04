@@ -9,6 +9,7 @@ class Boxer:
     def receiveDamage(self, hit):      #count damage 
         self.health = self.health - hit
         print('{} has {} hp left'.format(self.name, self.health))
+        print()
 
     def hit(self, boxer):               #random damage applied to boxer
         hit = random.randrange(5, 33)
